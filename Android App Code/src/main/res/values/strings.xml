@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="admin_receiver_status_enabled" />
+    <string name="admin_receiver_status_disabled" />
+    <string name="device_admin_not_enabled" />
+    <string name="admin_receiver_status" />
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+	<threadsafe>true</threadsafe>
+	<automatic-scaling>
+		<min-idle-instances>5</min-idle-instances>
+
+		<!-- ‘automatic’ is the default value. -->
+		<max-idle-instances>10</max-idle-instances>
+
+		<!-- ‘automatic’ is the default value. -->
+		<min-pending-latency>10ms</min-pending-latency>
+		<max-pending-latency>30ms</max-pending-latency>
+
+		<!-- ‘8’ is the default value. -->
+		<max-concurrent-requests>10</max-concurrent-requests>
+	</automatic-scaling>
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+	</system-properties>
+	<env-variables>
+		<env-var name="TWILIO_ACCOUNT_SID" value="ACcdf2565e628dec0b2df04a16d503eafd" />
+		<env-var name="TWILIO_AUTH_TOKEN" value="ca2b74dc5497c135533dc4a53bc260fc" />
+		<env-var name="TWILIO_NUMBER" value="4803786841" />
+		<env-var name="GOOGLE_MAPS_DIRECTION_API_KEY" value="AIzaSyAP7ws351qMC_oHmwZlN0jyToq5NEImK8w" />
+		<env-var name="GOOGLE_MAPS_PLACES_API_KEY" value="AIzaSyAx2k6n6qEwm6BQ6AyapQ6pqEAZg28QdGU" />
+
+		<env-var name="TWILIO_ASU_ACCOUNT_SID_TEST" value="ACeaaff3d51192a936465ccf165665594b" />
+		<env-var name="TWILIO_ASU_AUTH_TOKEN_TEST" value="92c3fa6cf88dae5c0d73861cb1f5b729" />
+		<env-var name="TWILIO_ASU_MAGIC_NUMBER" value="15005550006" />
+
+		<env-var name="TWILIO_ASU_ACCOUNT_SID_LIVE" value="AC9b1fe22cac61ab84693e18df48af0ad1" />
+		<env-var name="TWILIO_ASU_AUTH_TOKEN_LIVE" value="70cee8ec1d9f59f8db2194de60a82611" />
+		<env-var name="TWILIO_ASU_NUMBER" value="6237772988" />
+
+	</env-variables>
+</appengine-web-app>
